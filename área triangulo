@@ -1,0 +1,101 @@
+# calcular el area de un triangulo
+base = int(input("ingresar la base del triangulo:"))
+altura = int(input("ingresar la altura del triangulo:"))
+area = (base * altura) / 2 
+print("El area del triangulo es:" , area, "cm²")
+
+a = int(input("ingresar numero a aqui"))
+b = int(input("ingresar numero b aqui"))
+print (a + b)
+
+numero = int(input("introducir numero aqui:"))
+print('El cuadrado de',numero,'es:', numero**2)
+
+# tipo de cambio  euros a dolares
+tipo_de_cambio = 1.08
+# solicitar al usuario la cantidad de euros
+euros = float(input("ingrese la cantidad de euros a convertir:"))
+#convertimos euros a dolares
+dolares = euros * tipo_de_cambio
+#mostrar el resultado
+print (f"{euros}) euros son {dolares} dolares")
+
+lado = int(input("ingresar medida del cadrado"))
+
+perimetro = lado * 4
+area = lado * lado
+print("el perimetro del cuadrado es:")
+print(perimetro)
+print("el area del cuadrado es:")
+print(area) 
+
+# area y volumen cilindro
+
+from math import pi 
+def volumen_cilindro (r, h):
+    volumen = pi * r**2 * h 
+    
+    return volumen 
+def area_cilindro (r, h):
+    area = 2 * pi * r**2 + 2 * pi *r * h
+    
+    return area 
+
+radio = 5
+altura = 7
+print(f"volumen del cilindro: {volumen_cilindro(radio, altura)}")
+print(f"area del cilindro: {area_cilindro(radio, altura)})") 
+
+import math
+
+def longitud_circunferencia(radio):
+    """
+    Calcula la longitud de una circunferencia dado su radio.
+
+    Args:
+    radio (float): El radio de la circunferencia.
+
+    Returns:
+    float: La longitud de la circunferencia.
+    """
+    return 2 * math.pi * radio
+
+def area_circulo(radio):
+    """
+    Calcula el área de un círculo dado su radio.
+
+    Args:
+    radio (float): El radio del círculo.
+
+    Returns:
+    float: El área del círculo.
+    """
+    return math.pi * radio ** 2
+
+# Solicitar al usuario que ingrese el radio de la circunferencia
+radio = float(input("Ingrese el radio de la circunferencia: "))
+
+# Calcular la longitud de la circunferencia y el área del círculo
+longitud = longitud_circunferencia(radio)
+area = area_circulo(radio)
+
+# Calcular el área del círculo inscrito
+area_inscrito = area_circulo(radio / 2)
+
+# Mostrar los resultados
+print(f"La longitud de la circunferencia es: {longitud}")
+print(f"El área del círculo es: {area}")
+print(f"El área del círculo inscrito es: {area_inscrito}")
+
+
+# solicitar al usuario que ingrese los tres numeros
+
+numero1 =float(input("ingrese el primero numero"))
+numero2 =float(input("ingrese el segundo numero"))
+numero3 =float(input("ingrese el tercer numero"))
+
+# Calcular el promedio
+promedio = ( numero1 + numero2 + numero3) / 3 
+
+# Mostrar el resultado
+print ("el promedio de los tres numero es:", promedio)
